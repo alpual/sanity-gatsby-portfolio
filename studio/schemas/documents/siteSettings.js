@@ -15,6 +15,18 @@ export default {
       title: 'Title'
     },
     {
+      name: 'subtitle',
+      type: 'string',
+      title: 'Subtitle',
+      description: 'Keep it short and sweet'
+    },
+    {
+      name: 'logo',
+      type: 'image',
+      title: 'logo',
+      description: 'An svg or png of the logo',
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',

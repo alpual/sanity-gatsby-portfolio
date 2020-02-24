@@ -25,12 +25,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-column-gap: 2em;
-
-  @media (--media-min-medium) {
-    grid-template-columns: 3fr 1fr;
-  }
 }
 
 .mainContent {

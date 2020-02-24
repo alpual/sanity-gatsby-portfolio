@@ -15,6 +15,7 @@ export const query = graphql`
   query IndexPageQuery {
     site: sanitySiteSettings(_id: {regex: "/(drafts.|)siteSettings/"}) {
       title
+      subtitle
       description
       keywords
     }
@@ -56,6 +57,30 @@ export const query = graphql`
         }
       }
     }
+    homepageCarousel: allSanityHomepageCarousel(limit: 12) {
+      edges {
+        node {
+          id
+          image {
+            _key
+            _type
+            hotspot {
+              _key
+              _type
+              x
+              y
+              height
+              width
+            }
+            asset {
+              _id
+            }
+            caption
+            alt
+          }
+        }
+      }
+    }
   }
 `
 
@@ -76,6 +101,10 @@ const IndexPage = props => {
       .filter(filterOutDocsWithoutSlugs)
       .filter(filterOutDocsPublishedInTheFuture)
     : []
+  
+  const homepageCarousel = (data || {}).homepageCarousel 
+    ? mapEdgesToNodes(data.homepageCarousel)
+    : []
 
   if (!site) {
     throw new Error(
@@ -86,8 +115,8 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Container>
-        <h1 hidden>Welcome to {site.title}</h1>
+      <Container> 
+        {homepageCarousel && JSON.stringify(homepageCarousel)}
         {projectNodes && (
           <ProjectPreviewGrid
             title='Latest projects'
