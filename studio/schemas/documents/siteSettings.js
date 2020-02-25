@@ -13,26 +13,17 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title'
-    },
-    {
-      name: 'subtitle',
-      type: 'string',
-      title: 'Subtitle',
-      description: 'Keep it short and sweet'
-    },
-    {
+    }, {
       name: 'logo',
       type: 'image',
       title: 'logo',
       description: 'An svg or png of the logo',
-    },
-    {
+    }, {
       name: 'description',
       type: 'text',
       title: 'Description',
       description: 'Describe your portfolio for search engines and social media.'
-    },
-    {
+    }, {
       name: 'keywords',
       type: 'array',
       title: 'Keywords',
@@ -41,8 +32,7 @@ export default {
       options: {
         layout: 'tags'
       }
-    },
-    {
+    }, {
       name: 'author',
       type: 'reference',
       description: 'Publish an author and set a reference to them here.',

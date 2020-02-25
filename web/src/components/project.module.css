@@ -7,6 +7,10 @@
   composes: responsiveTitle1 from './typography.module.css';
 }
 
+figure {
+  margin: 0;
+}
+
 .mainImage {
   position: relative;
   background: #eee;

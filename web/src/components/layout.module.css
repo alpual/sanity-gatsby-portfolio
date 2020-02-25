@@ -3,17 +3,15 @@
 
 .pageWrapper {
   display: grid;
-  grid-template:  "sidebar content"
-                  "footer footer ";
+  grid-template-columns: 1fr 2fr;
+  grid-template:  "navigation content" 
+                  "footer footer" / 1fr 2fr;
   grid-gap: var(--layout-grid-gap);
   max-width: var(--page-max-width);
+  margin: 0 auto;
   padding: 1em;
   @media (--media-min-medium) {
     padding: 2em;
-  }
-  @media (--media-min-extra-large){
-    grid-template:  "sidebar content content"
-                    "footer footer footer";
   }
 }
 
