@@ -90,6 +90,7 @@ const AboutPage = props => {
                 <div className={styles.mainContent}>
                   <h1 className={styles.title}>{node.title}</h1>
                   {node._rawBody && <BlockContent blocks={node._rawBody || []} />}
+                  <p><a href="mailto:nnelson@risd.edu">Contact me</a></p>
                 </div>
               </div>
             </div>
