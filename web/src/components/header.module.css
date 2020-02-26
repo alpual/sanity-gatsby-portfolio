@@ -45,7 +45,7 @@
   }
   @nest & img {
     max-width: 100%;
-    width: 24vw;
+    width: min(24vw, 240px);
     min-width: 100px;
     /* @media (--media-max-large) {
       width: 150px;
