@@ -90,6 +90,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #eee;
 }
 
+.aboutPage {
+  padding-top: 3rem;
+}
+
 .responsiveTitle1 {
   font-weight: 900;
   font-size: var(--font-title3-size);

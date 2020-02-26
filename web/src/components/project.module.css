@@ -11,6 +11,13 @@ figure {
   margin: 0;
 }
 
+.aboutPage {
+  padding-top: 3rem;
+  @nest & figure {
+    padding-top: 1.5rem;
+  }
+}
+
 .mainImage {
   position: relative;
   background: #eee;

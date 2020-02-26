@@ -75,7 +75,7 @@ const AboutPage = props => {
         {aboutNodes && aboutNodes.map((node, index) => (
           <article
             key={node.id || index}
-            className={cn('about', node.title)}>
+            className={cn('about', node.title), styles.aboutPage}>
             <div className={styles.mediaBox}>
               {node.mainImage && node.mainImage.asset && (
                 <figure>
