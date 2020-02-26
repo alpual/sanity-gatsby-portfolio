@@ -1,20 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './hamburger.css';
 
-const strokeStyle = {vectorEffect: 'non-scaling-stroke'}
-
-const HamburgerIcon = () => (
-  <svg
-    viewBox='0 0 25 25'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-    preserveAspectRatio='xMidYMid'
-    width='1em'
-    height='1em'
-  >
-    <path d='M5 7.5H20' stroke='currentColor' style={strokeStyle} />
-    <path d='M5 12.5H20' stroke='currentColor' style={strokeStyle} />
-    <path d='M5 17.5H20' stroke='currentColor' style={strokeStyle} />
-  </svg>
-)
+const HamburgerIcon = ({isActive}) => {
+  return (
+    <button className={`hamburger hamburger--collapse ${isActive ? 'is-active' : 'is-closed'}`} type="button">
+      <span className="hamburger-box">
+        <span className="hamburger-inner"></span>
+      </span>
+    </button>
+  );
+}
 
 export default HamburgerIcon

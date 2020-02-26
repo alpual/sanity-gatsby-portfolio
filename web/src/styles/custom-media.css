@@ -1,7 +1,10 @@
 @custom-media --media-min-small (min-width: 450px);
 @custom-media --media-max-small (max-width: 449px);
 @custom-media --media-min-medium (min-width: 675px);
+@custom-media --media-max-medium (max-width: 674px);
 @custom-media --media-min-large (min-width: 900px);
+@custom-media --media-max-large (max-width: 899px);
 @custom-media --media-min-extra-large (min-width: 1200px);
+@custom-media --media-min-extra-large (max-width: 1199px);
 
 @include "https://use.typekit.net/zni6tie.css";

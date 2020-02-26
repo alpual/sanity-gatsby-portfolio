@@ -1,12 +1,12 @@
 import React from 'react'
 import HamburgerIcon from './hamburger'
 
-function Icon (props) {
-  switch (props.symbol) {
+function Icon (symbol, showNav) {
+  switch (symbol) {
     case 'hamburger':
-      return <HamburgerIcon />
+      return <HamburgerIcon isActive={showNav}/>
     default:
-      return <span>Unknown icon: {props.symbol}</span>
+      return <span>Unknown icon: {symbol}</span>
   }
 }
 

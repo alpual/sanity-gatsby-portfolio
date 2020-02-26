@@ -9,20 +9,21 @@ const HomeCarousel = ({nodes}) => {
   console.dir(nodes);
   return (
     <>
-      <Carousel
-        className={styles.hiddenSm, styles.hiddenMd}
-        autoplay={true}
-        autoplayInterval={5000}
-      >
-        {nodes && nodes.map(node => (
-          <img
-            key={node.id}
-            src={imageUrlFor(buildImageObj(node.image)).url()}
-            alt={node.alt && node.alt}
-          />
-        ))}
-      </Carousel>
-      <div className={styles.hiddenLg, styles.hiddenXl}>
+      <div className={styles.carousel}>
+        <Carousel
+          autoplay={true}
+          autoplayInterval={5000}
+        >
+          {nodes && nodes.map(node => (
+            <img
+              key={node.id}
+              src={imageUrlFor(buildImageObj(node.image)).url()}
+              alt={node.alt && node.alt}
+            />
+          ))}
+        </Carousel>
+      </div>
+      <div className={styles.mobileImages}>
         {
           nodes && nodes.map(node => (
             <img

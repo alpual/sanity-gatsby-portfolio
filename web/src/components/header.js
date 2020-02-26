@@ -1,30 +1,33 @@
 import {Link} from 'gatsby'
 import React from 'react'
-import Icon from './icon'
+import HamburgerIcon from './icon/hamburger'
+
 import {cn, buildImageObj} from '../lib/helpers'
 
 import styles from './header.module.css'
 import { imageUrlFor } from '../lib/image-url'
 
-const Header = ({onHideNav, onShowNav, showNav, siteTitle, logo}) => (
+const Header = ({onHideNav, onShowNav, showNav, logo}) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
-      <div className={styles.branding}>
-        <Link to='/' className={styles.logo}>
-          {logo && (
-            <img 
-              src={imageUrlFor(buildImageObj(logo))
-                .width(290)
-                .height(225)
-                .url()} 
-              />
-            )}
-        </Link>
-      </div>
+      <div className={styles.hamburgerWrapper}>
+        <div className={styles.branding}>
+          <Link to='/' className={styles.logo}>
+            {logo && (
+              <img 
+                src={imageUrlFor(buildImageObj(logo))
+                  .width(290)
+                  .height(225)
+                  .url()} 
+                />
+              )}
+          </Link>
+        </div>
 
-      <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
-        <Icon symbol='hamburger' />
-      </button>
+        <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
+          <HamburgerIcon isActive={showNav} />
+        </button>
+      </div>
 
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>

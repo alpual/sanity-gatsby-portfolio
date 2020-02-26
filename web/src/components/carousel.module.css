@@ -7,23 +7,16 @@
   margin: 0 auto;
 }
 
-.hiddenSm {
-  @media (--media-max-small) {
+.mobileImages{
+  @media (--media-min-medium) {
     display: none !important;
   }
-}
-.hiddenMd {
-  @media (--media-max-medium) and (--media-min-small) {
-    display: none !important;
+  @nest & img {
+    max-width: 100%;
   }
 }
-.hiddenLg {
-  @media (--media-max-large) and (--media-min-medium) {
-    display: none !important;
-  }
-}
-.hiddenXl {
-  @media (--media-min-large) {
+.carousel{
+   @media (--media-max-medium) {
     display: none !important;
   }
 }
