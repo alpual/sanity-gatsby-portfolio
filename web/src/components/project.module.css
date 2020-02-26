@@ -12,9 +12,11 @@ figure {
 }
 
 .aboutPage {
-  padding-top: 3rem;
-  @nest & figure {
-    padding-top: 1.5rem;
+  @media (--media-min-small) {
+    padding-top: 3rem;
+    @nest & figure {
+      padding-top: 1.5rem;
+    }
   }
 }
 
