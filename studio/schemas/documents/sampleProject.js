@@ -23,7 +23,7 @@ export default {
     {
       name: 'publishedAt',
       title: 'Published at',
-      description: 'You can use this field to schedule projects where you show them',
+      description: 'You can use this field to schedule projects where you show them. It will also determine sort order, with newer dates higher on the page.',
       type: 'datetime'
     },
     {

@@ -18,7 +18,15 @@ export const query = graphql`
       description
       keywords
     }
-    homepageCarousel: allSanityHomepageCarousel(limit: 12) {
+    homepageCarousel: allSanityHomepageCarousel(
+      limit: 7,
+      sort: {
+        fields: [publishedAt],
+        order: DESC
+      },
+      filter: {
+        publishedAt: {ne: null}
+      }) {
       edges {
         node {
           id

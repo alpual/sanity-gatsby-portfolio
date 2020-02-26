@@ -1,4 +1,5 @@
 @import './custom-properties.css';
+@import './custom-media.css';
 
 html {
   font-family: var(--font-family-sans);
@@ -18,4 +19,25 @@ body,
 body > div,
 body > div > div {
   height: 100%;
+}
+
+.hidden-sm {
+  @media (--media-max-small) {
+    display: none !important;
+  }
+}
+.hidden-md {
+  @media (--media-max-medium) and (--media-min-small) {
+    display: none !important;
+  }
+}
+.hidden-lg {
+  @media (--media-max-large) and (--media-min-medium) {
+    display: none !important;
+  }
+}
+.hidden-xl {
+  @media (--media-min-large) {
+    display: none !important;
+  }
 }
