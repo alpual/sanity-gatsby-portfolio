@@ -76,19 +76,21 @@ const AboutPage = props => {
           <article
             key={node.id || index}
             className={cn('about', node.title)}>
-            <h1 className={styles.title}>{node.title}</h1>
-            {node.mainImage && node.mainImage.asset && (
-              <figure>
-                <img
-                  key={node.id}
-                  src={imageUrlFor(buildImageObj(node.mainImage)).url()}
-                  alt={node.alt && node.alt}
-                />
-              </figure>
-            )}
-            <div className={styles.grid}>
-              <div className={styles.mainContent}>
-                {node._rawBody && <BlockContent blocks={node._rawBody || []} />}
+            <div className={styles.mediaBox}>
+              {node.mainImage && node.mainImage.asset && (
+                <figure>
+                  <img
+                    key={node.id}
+                    src={imageUrlFor(buildImageObj(node.mainImage)).url()}
+                    alt={node.alt && node.alt}
+                  />
+                </figure>
+              )}
+              <div className={styles.grid}>
+                <div className={styles.mainContent}>
+                  <h1 className={styles.title}>{node.title}</h1>
+                  {node._rawBody && <BlockContent blocks={node._rawBody || []} />}
+                </div>
               </div>
             </div>
           </article>

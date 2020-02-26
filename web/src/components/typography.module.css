@@ -102,8 +102,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   @media (--media-min-medium) {
-    font-size: var(--font-title1-size);
-    line-height: var(--font-title1-line-height);
+    font-size: var(--font-title2-and-a-half-size);
+    line-height: var(--font-title2-and-a-half-line-height);
   }
 }
 
