@@ -28,6 +28,7 @@ export default {
   preview: {
     select: {
       title: 'title',
+      publishedAt: 'publishedAt',
       slug: 'slug',
       media: 'image'
     },

@@ -1,9 +1,7 @@
 import React from 'react'
 import {graphql} from 'gatsby'
 import {
-  mapEdgesToNodes,
-  filterOutDocsWithoutSlugs,
-  filterOutDocsPublishedInTheFuture
+  mapEdgesToNodes
 } from '../lib/helpers'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
