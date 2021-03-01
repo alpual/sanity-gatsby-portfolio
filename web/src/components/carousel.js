@@ -6,7 +6,7 @@ import '../styles/layout.css'
 import styles from './carousel.module.css';
 
 const HomeCarousel = ({nodes}) => {
-  console.dir(nodes);
+  // console.dir(nodes);
   return (
     <>
       <div className={styles.carousel}>
