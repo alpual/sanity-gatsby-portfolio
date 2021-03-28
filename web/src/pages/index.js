@@ -45,6 +45,11 @@ export const query = graphql`
             caption
             alt
           }
+          link {
+            slug {
+              current
+            }
+          }
         }
       }
     }

@@ -24,6 +24,13 @@ export default {
       title: 'Image',
       type: 'figure'
     },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'reference',
+      description: 'Choose a project to which to link this slide',
+      to: [{type: 'sampleProject'}]
+    },
   ],
   preview: {
     select: {

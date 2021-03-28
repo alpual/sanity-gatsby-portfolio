@@ -4,6 +4,7 @@ import { buildImageObj } from '../lib/helpers';
 import Carousel from 'nuka-carousel';
 import '../styles/layout.css'
 import styles from './carousel.module.css';
+import { Link } from 'gatsby';
 
 const HomeCarousel = ({nodes}) => {
   // console.dir(nodes);
@@ -15,11 +16,17 @@ const HomeCarousel = ({nodes}) => {
           autoplayInterval={5000}
         >
           {nodes && nodes.map(node => (
-            <img
-              key={node.id}
-              src={imageUrlFor(buildImageObj(node.image)).url()}
-              alt={node.alt && node.alt}
-            />
+            <Link
+              className={styles.carousel__link}
+              to={`project/${node.link.slug.current}`}
+            >
+              <img
+                className={styles.carousel__image}
+                key={node.id}
+                src={imageUrlFor(buildImageObj(node.image)).url()}
+                alt={node.alt && node.alt}
+              />
+            </Link>
           ))}
         </Carousel>
       </div>

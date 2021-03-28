@@ -20,3 +20,14 @@
     display: none !important;
   }
 }
+
+.carousel__link {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.carousel__image {
+  width: 100%;
+  display: block;
+}
