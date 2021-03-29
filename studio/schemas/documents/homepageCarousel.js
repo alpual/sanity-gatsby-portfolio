@@ -1,3 +1,5 @@
+import {format} from 'date-fns';
+
 export default {
   name: 'homepageCarousel',
   title: 'Homepage Carousel',
