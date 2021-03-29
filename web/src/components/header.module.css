@@ -26,7 +26,7 @@
 
   @nest & a {
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0 0.5em;
     color: inherit;
     text-decoration: none;
 
@@ -34,6 +34,10 @@
       @nest &:hover {
         color: var(--color-accent);
       }
+    }
+    @media (--media-max-small) {
+      padding-left: 0;
+      padding-top: 0;
     }
   }
 
@@ -102,10 +106,11 @@
     display: block;
     width: 100%;
     font-family: acier-bat-solid;
-    font-size: min(4vw, 84px);
-    line-height: 1em;
+    font-size: clamp(24px, 4vw, 72px);
+    line-height: 0.8em;
     color: inherit;
     text-decoration: none;
+    text-align: right;
   }
 
   @media (hover: hover) {
@@ -120,12 +125,7 @@
       line-height: .75em;
     }
   }
-  
-  @media (--media-max-medium) {
-    @nest & ul li a {
-      line-height: .625em;
-    }
-  } 
+
 
   @media (--media-max-small) {
     background: var(--color-white);
@@ -136,7 +136,7 @@
     }
 
     @nest & ul li a {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 0;
       font-size: var(--font-title3-size);
     }
   }
@@ -145,8 +145,8 @@
     display: block;
     height: auto;
     max-height: 400px;
-    padding-top: 3vw;
-    margin-top: 3vw;
+    padding-top: clamp(24px, 3vw, 52px);
+    margin-top: clamp(24px, 3vw, 52px);
     border-top: 2px solid;
 
     @nest & ul {
@@ -156,15 +156,19 @@
     }
 
     @nest & ul li a {
-      padding: 0.5rem;
+      padding: 0.75rem 0;
+    }
+
+    @nest & ul li:first-of-type a {
+      padding-top: 0;
     }
   }
 
 }
 
 .small {
-  @media (--media-min-large) {
-    font-size: min(3vw, 64px)!important;
+  @media (--media-min-small) {
+    font-size: clamp(24px, 3vw, 52px)!important;
   }
 }
 
