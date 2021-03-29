@@ -33,11 +33,16 @@ const HomeCarousel = ({nodes}) => {
       <div className={styles.mobileImages}>
         {
           nodes && nodes.map(node => (
-            <img
-              key={node.id}
-              src={imageUrlFor(buildImageObj(node.image)).url()}
-              alt={node.alt && node.alt}
-            />
+            <Link
+              className={styles.carousel__link}
+              to={`project/${node.link.slug.current}`}
+            >
+              <img
+                key={node.id}
+                src={imageUrlFor(buildImageObj(node.image)).url()}
+                alt={node.alt && node.alt}
+              />
+            </Link>
           ))
         }
       </div>
