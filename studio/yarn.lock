@@ -2028,7 +2028,7 @@ array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
 
-array-includes@^3.1.1, array-includes@^3.1.2, array-includes@^3.1.3:
+array-includes@^3.1.2, array-includes@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/array-includes/-/array-includes-3.1.3.tgz#c7f619b382ad2afaf5326cddfdc0afc61af7690a"
   dependencies:
@@ -2046,9 +2046,9 @@ array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.npmjs.org/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
 
-array.prototype.flat@^1.2.3:
+array.prototype.flat@^1.2.4:
   version "1.2.4"
-  resolved "https://registry.npmjs.org/array.prototype.flat/-/array.prototype.flat-1.2.4.tgz#6ef638b43312bd401b4c6199fdec7e2dc9e9a123"
+  resolved "https://registry.yarnpkg.com/array.prototype.flat/-/array.prototype.flat-1.2.4.tgz#6ef638b43312bd401b4c6199fdec7e2dc9e9a123"
   dependencies:
     call-bind "^1.0.0"
     define-properties "^1.1.3"
@@ -2111,7 +2111,7 @@ async-each@^1.0.1:
 
 async-limiter@~1.0.0:
   version "1.0.1"
-  resolved "https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
+  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
 
 async@^2.1.2, async@^2.4.1:
   version "2.6.3"
@@ -2164,9 +2164,9 @@ babel-code-frame@^6.26.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-eslint@^10.0.1:
+babel-eslint@^10.1.0:
   version "10.1.0"
-  resolved "https://registry.npmjs.org/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/parser" "^7.7.0"
@@ -2959,10 +2959,6 @@ container-query-toolkit@0.1.3:
   version "0.1.3"
   resolved "https://registry.npmjs.org/container-query-toolkit/-/container-query-toolkit-0.1.3.tgz#79ece9fe491d9187b7051247067f1faac6ce00b0"
 
-contains-path@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/contains-path/-/contains-path-0.1.0.tgz#fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
-
 content-disposition@0.5.3:
   version "0.5.3"
   resolved "https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.3.tgz#e130caf7e7279087c5616c2007d0485698984fbd"
@@ -3360,7 +3356,7 @@ debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.0:
+debug@^3.1.0, debug@^3.2.7:
   version "3.2.7"
   resolved "https://registry.npmjs.org/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
   dependencies:
@@ -3500,13 +3496,6 @@ direction@^1.0.3:
 dlv@^1.1.0:
   version "1.1.3"
   resolved "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz#5c198a8a11453596e751494d49874bc7732f2e79"
-
-doctrine@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/doctrine/-/doctrine-1.5.0.tgz#379dce730f6166f76cefa4e6707a159b02c5a6fa"
-  dependencies:
-    esutils "^2.0.2"
-    isarray "^1.0.0"
 
 doctrine@^2.1.0:
   version "2.1.0"
@@ -3703,6 +3692,27 @@ es-abstract@^1.17.2, es-abstract@^1.18.0-next.1, es-abstract@^1.18.0-next.2:
     string.prototype.trimstart "^1.0.4"
     unbox-primitive "^1.0.0"
 
+es-abstract@^1.18.2:
+  version "1.18.3"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.18.3.tgz#25c4c3380a27aa203c44b2b685bba94da31b63e0"
+  dependencies:
+    call-bind "^1.0.2"
+    es-to-primitive "^1.2.1"
+    function-bind "^1.1.1"
+    get-intrinsic "^1.1.1"
+    has "^1.0.3"
+    has-symbols "^1.0.2"
+    is-callable "^1.2.3"
+    is-negative-zero "^2.0.1"
+    is-regex "^1.1.3"
+    is-string "^1.0.6"
+    object-inspect "^1.10.3"
+    object-keys "^1.1.1"
+    object.assign "^4.1.2"
+    string.prototype.trimend "^1.0.4"
+    string.prototype.trimstart "^1.0.4"
+    unbox-primitive "^1.0.1"
+
 es-get-iterator@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npmjs.org/es-get-iterator/-/es-get-iterator-1.1.2.tgz#9234c54aba713486d7ebde0220864af5e2b283f7"
@@ -3845,11 +3855,11 @@ eslint-import-resolver-node@^0.3.4:
     debug "^2.6.9"
     resolve "^1.13.1"
 
-eslint-module-utils@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.6.0.tgz#579ebd094f56af7797d19c9866c9c9486629bfa6"
+eslint-module-utils@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.6.1.tgz#b51be1e473dd0de1c5ea638e22429c2490ea8233"
   dependencies:
-    debug "^2.6.9"
+    debug "^3.2.7"
     pkg-dir "^2.0.0"
 
 eslint-plugin-es@^1.4.1:
@@ -3859,27 +3869,29 @@ eslint-plugin-es@^1.4.1:
     eslint-utils "^1.4.2"
     regexpp "^2.0.1"
 
-eslint-plugin-import@^2.17.2:
-  version "2.22.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz#0896c7e6a0cf44109a2d97b95903c2bb689d7702"
+eslint-plugin-import@^2.22.1:
+  version "2.23.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.23.4.tgz#8dceb1ed6b73e46e50ec9a5bb2411b645e7d3d97"
   dependencies:
-    array-includes "^3.1.1"
-    array.prototype.flat "^1.2.3"
-    contains-path "^0.1.0"
+    array-includes "^3.1.3"
+    array.prototype.flat "^1.2.4"
     debug "^2.6.9"
-    doctrine "1.5.0"
+    doctrine "^2.1.0"
     eslint-import-resolver-node "^0.3.4"
-    eslint-module-utils "^2.6.0"
+    eslint-module-utils "^2.6.1"
+    find-up "^2.0.0"
     has "^1.0.3"
+    is-core-module "^2.4.0"
     minimatch "^3.0.4"
-    object.values "^1.1.1"
-    read-pkg-up "^2.0.0"
-    resolve "^1.17.0"
+    object.values "^1.1.3"
+    pkg-up "^2.0.0"
+    read-pkg-up "^3.0.0"
+    resolve "^1.20.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-node@^9.0.1:
+eslint-plugin-node@^9.2.0:
   version "9.2.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-node/-/eslint-plugin-node-9.2.0.tgz#b1911f111002d366c5954a6d96d3cd5bf2a3036a"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-node/-/eslint-plugin-node-9.2.0.tgz#b1911f111002d366c5954a6d96d3cd5bf2a3036a"
   dependencies:
     eslint-plugin-es "^1.4.1"
     eslint-utils "^1.4.2"
@@ -3888,13 +3900,13 @@ eslint-plugin-node@^9.0.1:
     resolve "^1.10.1"
     semver "^6.1.0"
 
-eslint-plugin-promise@^4.1.1:
+eslint-plugin-promise@^4.3.1:
   version "4.3.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-4.3.1.tgz#61485df2a359e03149fdafc0a68b0e030ad2ac45"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.3.1.tgz#61485df2a359e03149fdafc0a68b0e030ad2ac45"
 
-eslint-plugin-react@^7.13.0:
-  version "7.23.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.23.1.tgz#f1a2e844c0d1967c822388204a8bc4dee8415b11"
+eslint-plugin-react@^7.23.1:
+  version "7.24.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.24.0.tgz#eadedfa351a6f36b490aa17f4fa9b14e842b9eb4"
   dependencies:
     array-includes "^3.1.3"
     array.prototype.flatmap "^1.2.4"
@@ -3902,16 +3914,16 @@ eslint-plugin-react@^7.13.0:
     has "^1.0.3"
     jsx-ast-utils "^2.4.1 || ^3.0.0"
     minimatch "^3.0.4"
-    object.entries "^1.1.3"
+    object.entries "^1.1.4"
     object.fromentries "^2.0.4"
-    object.values "^1.1.3"
+    object.values "^1.1.4"
     prop-types "^15.7.2"
     resolve "^2.0.0-next.3"
-    string.prototype.matchall "^4.0.4"
+    string.prototype.matchall "^4.0.5"
 
-eslint-plugin-standard@^4.0.0:
+eslint-plugin-standard@^4.1.0:
   version "4.1.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-standard/-/eslint-plugin-standard-4.1.0.tgz#0c3bf3a67e853f8bbbc580fb4945fbf16f41b7c5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-4.1.0.tgz#0c3bf3a67e853f8bbbc580fb4945fbf16f41b7c5"
 
 eslint-scope@^3.7.1:
   version "3.7.3"
@@ -5150,6 +5162,12 @@ is-core-module@^2.2.0:
   dependencies:
     has "^1.0.3"
 
+is-core-module@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.4.0.tgz#8e9fc8e15027b011418026e98f0e6f4d86305cc1"
+  dependencies:
+    has "^1.0.3"
+
 is-data-descriptor@^0.1.4:
   version "0.1.4"
   resolved "https://registry.npmjs.org/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz#0b5ee648388e2c860282e793f1856fec3f301b56"
@@ -5326,6 +5344,13 @@ is-regex@^1.0.4, is-regex@^1.1.2:
     call-bind "^1.0.2"
     has-symbols "^1.0.1"
 
+is-regex@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/is-regex/-/is-regex-1.1.3.tgz#d029f9aff6448b93ebbe3f33dac71511fdcbef9f"
+  dependencies:
+    call-bind "^1.0.2"
+    has-symbols "^1.0.2"
+
 is-resolvable@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/is-resolvable/-/is-resolvable-1.1.0.tgz#fb18f87ce1feb925169c9a407c19318a3206ed88"
@@ -5345,6 +5370,10 @@ is-stream@^1.1.0:
 is-string@^1.0.4, is-string@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/is-string/-/is-string-1.0.5.tgz#40493ed198ef3ff477b8c7f92f644ec82a5cd3a6"
+
+is-string@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/is-string/-/is-string-1.0.6.tgz#3fe5d5992fb0d93404f32584d4b0179a71b54a5f"
 
 is-svg@^3.0.0:
   version "3.0.0"
@@ -5619,6 +5648,15 @@ load-json-file@^2.0.0:
     graceful-fs "^4.1.2"
     parse-json "^2.2.0"
     pify "^2.0.0"
+    strip-bom "^3.0.0"
+
+load-json-file@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-4.0.0.tgz#2f5f45ab91e33216234fd53adab668eb4ec0993b"
+  dependencies:
+    graceful-fs "^4.1.2"
+    parse-json "^4.0.0"
+    pify "^3.0.0"
     strip-bom "^3.0.0"
 
 loader-runner@^2.3.0:
@@ -6258,6 +6296,10 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
+object-inspect@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.10.3.tgz#c2aa7d2d09f50c99375704f7a0adf24c5782d369"
+
 object-inspect@^1.3.0, object-inspect@^1.6.0, object-inspect@^1.7.0, object-inspect@^1.9.0:
   version "1.9.0"
   resolved "https://registry.npmjs.org/object-inspect/-/object-inspect-1.9.0.tgz#c90521d74e1127b67266ded3394ad6116986533a"
@@ -6288,7 +6330,7 @@ object.assign@^4.1.0, object.assign@^4.1.2:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
-object.entries@^1.1.0, object.entries@^1.1.3:
+object.entries@^1.1.0:
   version "1.1.3"
   resolved "https://registry.npmjs.org/object.entries/-/object.entries-1.1.3.tgz#c601c7f168b62374541a07ddbd3e2d5e4f7711a6"
   dependencies:
@@ -6296,6 +6338,14 @@ object.entries@^1.1.0, object.entries@^1.1.3:
     define-properties "^1.1.3"
     es-abstract "^1.18.0-next.1"
     has "^1.0.3"
+
+object.entries@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/object.entries/-/object.entries-1.1.4.tgz#43ccf9a50bc5fd5b649d45ab1a579f24e088cafd"
+  dependencies:
+    call-bind "^1.0.2"
+    define-properties "^1.1.3"
+    es-abstract "^1.18.2"
 
 object.fromentries@^2.0.4:
   version "2.0.4"
@@ -6320,7 +6370,7 @@ object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
-object.values@^1.1.0, object.values@^1.1.1, object.values@^1.1.3:
+object.values@^1.1.0, object.values@^1.1.3:
   version "1.1.3"
   resolved "https://registry.npmjs.org/object.values/-/object.values-1.1.3.tgz#eaa8b1e17589f02f698db093f7c62ee1699742ee"
   dependencies:
@@ -6328,6 +6378,14 @@ object.values@^1.1.0, object.values@^1.1.1, object.values@^1.1.3:
     define-properties "^1.1.3"
     es-abstract "^1.18.0-next.2"
     has "^1.0.3"
+
+object.values@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/object.values/-/object.values-1.1.4.tgz#0d273762833e816b693a637d30073e7051535b30"
+  dependencies:
+    call-bind "^1.0.2"
+    define-properties "^1.1.3"
+    es-abstract "^1.18.2"
 
 observable-callback@^1.0.1:
   version "1.0.1"
@@ -6592,6 +6650,12 @@ path-type@^2.0.0:
   dependencies:
     pify "^2.0.0"
 
+path-type@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/path-type/-/path-type-3.0.0.tgz#cef31dc8e0a1a3bb0d105c0cd97cf3bf47f4e36f"
+  dependencies:
+    pify "^3.0.0"
+
 path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
@@ -6630,6 +6694,10 @@ pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
 
+pify@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
+
 pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
@@ -6665,6 +6733,12 @@ pkg-dir@^4.1.0:
   resolved "https://registry.npmjs.org/pkg-dir/-/pkg-dir-4.2.0.tgz#f099133df7ede422e81d1d8448270eeb3e4261f3"
   dependencies:
     find-up "^4.0.0"
+
+pkg-up@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
+  dependencies:
+    find-up "^2.1.0"
 
 pleeease-filters@^4.0.0:
   version "4.0.0"
@@ -7302,9 +7376,9 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
-prettier-eslint-cli@^5.0.0:
+prettier-eslint-cli@^5.0.1:
   version "5.0.1"
-  resolved "https://registry.npmjs.org/prettier-eslint-cli/-/prettier-eslint-cli-5.0.1.tgz#8478e08f9b4c51c3751dd3ae76f630658329af64"
+  resolved "https://registry.yarnpkg.com/prettier-eslint-cli/-/prettier-eslint-cli-5.0.1.tgz#8478e08f9b4c51c3751dd3ae76f630658329af64"
   dependencies:
     arrify "^2.0.1"
     boolify "^1.0.0"
@@ -7600,9 +7674,9 @@ react-datepicker@^1.8.0:
     react-onclickoutside "^6.7.1"
     react-popper "^1.0.2"
 
-react-dom@^16.12.0:
+react-dom@^16.14.0:
   version "16.14.0"
-  resolved "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -7779,9 +7853,9 @@ react-tippy@^1.2.3:
   dependencies:
     popper.js "^1.11.1"
 
-react@^16.12.0:
+react@^16.14.0:
   version "16.14.0"
-  resolved "https://registry.npmjs.org/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -7800,6 +7874,13 @@ read-pkg-up@^2.0.0:
     find-up "^2.0.0"
     read-pkg "^2.0.0"
 
+read-pkg-up@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-3.0.0.tgz#3ed496685dba0f8fe118d0691dc51f4a1ff96f07"
+  dependencies:
+    find-up "^2.0.0"
+    read-pkg "^3.0.0"
+
 read-pkg-up@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/read-pkg-up/-/read-pkg-up-7.0.1.tgz#f3a6135758459733ae2b95638056e1854e7ef507"
@@ -7815,6 +7896,14 @@ read-pkg@^2.0.0:
     load-json-file "^2.0.0"
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
+
+read-pkg@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-3.0.0.tgz#9cbc686978fee65d16c00e2b19c237fcf6e38389"
+  dependencies:
+    load-json-file "^4.0.0"
+    normalize-package-data "^2.3.2"
+    path-type "^3.0.0"
 
 read-pkg@^5.2.0:
   version "5.2.0"
@@ -8080,7 +8169,7 @@ resolve-url@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npmjs.org/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
 
-resolve@^1.1.7, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.17.0, resolve@^1.3.3:
+resolve@^1.1.7, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.20.0, resolve@^1.3.3:
   version "1.20.0"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
   dependencies:
@@ -8202,9 +8291,9 @@ sanity-plugin-dashboard-widget-document-list@^0.0.8:
     "@sanity/components" "^0.140.9"
     lodash "^4.17.11"
 
-sanity-plugin-dashboard-widget-netlify@^1.0.1:
+sanity-plugin-dashboard-widget-netlify@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.npmjs.org/sanity-plugin-dashboard-widget-netlify/-/sanity-plugin-dashboard-widget-netlify-1.1.0.tgz#cc8218e5345eff08d7336d0612824336feb1c816"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-dashboard-widget-netlify/-/sanity-plugin-dashboard-widget-netlify-1.1.0.tgz#cc8218e5345eff08d7336d0612824336feb1c816"
   dependencies:
     abort-controller "^2.0.3"
     react-props-stream "^1.0.0"
@@ -8627,14 +8716,15 @@ string-width@^4.1.0, string-width@^4.2.0:
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.0"
 
-string.prototype.matchall@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.npmjs.org/string.prototype.matchall/-/string.prototype.matchall-4.0.4.tgz#608f255e93e072107f5de066f81a2dfb78cf6b29"
+string.prototype.matchall@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/string.prototype.matchall/-/string.prototype.matchall-4.0.5.tgz#59370644e1db7e4c0c045277690cf7b01203c4da"
   dependencies:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
-    es-abstract "^1.18.0-next.2"
-    has-symbols "^1.0.1"
+    es-abstract "^1.18.2"
+    get-intrinsic "^1.1.1"
+    has-symbols "^1.0.2"
     internal-slot "^1.0.3"
     regexp.prototype.flags "^1.3.1"
     side-channel "^1.0.4"
@@ -9087,7 +9177,7 @@ uglifyjs-webpack-plugin@^0.4.6:
     uglify-js "^2.8.29"
     webpack-sources "^1.0.1"
 
-unbox-primitive@^1.0.0:
+unbox-primitive@^1.0.0, unbox-primitive@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.0.1.tgz#085e215625ec3162574dc8859abee78a59b14471"
   dependencies:
@@ -9521,8 +9611,8 @@ write@1.0.3:
     mkdirp "^0.5.1"
 
 ws@^6.1.0:
-  version "6.2.1"
-  resolved "https://registry.npmjs.org/ws/-/ws-6.2.1.tgz#442fdf0a47ed64f59b6a5d8ff130f4748ed524fb"
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.2.tgz#dd5cdbd57a9979916097652d78f1cc5faea0c32e"
   dependencies:
     async-limiter "~1.0.0"
 
