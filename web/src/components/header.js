@@ -32,7 +32,7 @@ const Header = ({onHideNav, onShowNav, showNav, logo}) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link className="emphasis" to='/portfolio'>Portfolio</Link>
+            <Link className={styles.small} to='/portfolio'>Industrial Design</Link>
           </li>
           <li>
             <Link to='/furniture-installation' className={styles.small}>Furniture & Installation</Link>

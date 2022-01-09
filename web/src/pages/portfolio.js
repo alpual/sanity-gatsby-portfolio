@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 import {
   mapEdgesToNodes,
   filterOutDocsWithoutSlugs,
@@ -72,8 +72,8 @@ export const query = graphql`
 }
 `
 
-const IndexPage = props => {
-  const { data, errors } = props
+const IndexPage = (props) => {
+  const {data, errors} = props
 
   if (errors) {
     return (
@@ -83,7 +83,7 @@ const IndexPage = props => {
     )
   }
 
-  const site = (data || {}).site
+  const {site} = data || {}
   const projectNodes = (data || {}).projects
     ? mapEdgesToNodes(data.projects)
       .filter(filterOutDocsWithoutSlugs)

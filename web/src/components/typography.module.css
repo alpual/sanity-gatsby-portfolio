@@ -94,6 +94,23 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 3rem;
 }
 
+.responsiveTitleLarge {
+  font-weight: 900;
+  font-size: var(--font-title1-size);
+  line-height: var(--font-title1-line-height);
+  margin: 1rem 0 2rem;
+
+  @media (--media-min-small) {
+    font-size: var(--font-title1-size);
+    line-height: var(--font-title1-line-height);
+  }
+
+  @media (--media-min-medium) {
+    font-size: var(--font-title-large-size);
+    line-height: var(--font-title-large-line-height);
+  }
+}
+
 .responsiveTitle1 {
   font-weight: 900;
   font-size: var(--font-title3-size);

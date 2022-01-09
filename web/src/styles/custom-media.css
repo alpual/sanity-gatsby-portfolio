@@ -5,6 +5,7 @@
 @custom-media --media-min-large (min-width: 900px);
 @custom-media --media-max-large (max-width: 899px);
 @custom-media --media-min-extra-large (min-width: 1200px);
-@custom-media --media-min-extra-large (max-width: 1199px);
+@custom-media --media-max-extra-large (max-width: 1199px);
+@custom-media --media-min-fucking-huge (min-width: 2800px);
 
 @include "https://use.typekit.net/zni6tie.css";

@@ -1,11 +1,19 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
+[data-pathname^="/project"] {
+  --layout-main-content-fr: 9fr;
+  --nav-link-default-font-size: 2vw;
+  --nav-link-small-font-size: 1vw;
+  --nav-divider-spacing-px: 1rem;
+  --nav-link-padding: 0.5rem;
+}
+
 .pageWrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr var(--layout-main-content-fr);
   grid-template:  "navigation content" 
-                  "footer footer" / 1fr 2fr;
+                  "footer footer" / 1fr var(--layout-main-content-fr);
   grid-gap: var(--layout-grid-gap);
   max-width: var(--page-max-width);
   margin: 0 auto;
@@ -23,8 +31,8 @@
   }
 }
 
+
 .content {
-  background: var(--color-white);
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {

@@ -8,6 +8,8 @@
   --color-very-light-gray: #e7ebed;
   --color-white: #fff;
   --color-accent: #3E8A9E;
+  --color-honey-gray: #f0ebe0;
+  --background-color: var(--color-honey-gray);
 
   /* Typography */
   --unit: 16;
@@ -28,11 +30,18 @@
   --font-title2-and-a-half-line-height: calc(36 / var(--unit) * 1rem); /* 32px */
   --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
   --font-title1-line-height: calc(57 / 49); /* 57px */
+  --font-title-large-size: calc(60 / var(--unit) * 1rem); /* 60px */
+  --font-title1-large-line-height: calc(57 / 60);
 
+  --nav-divider-spacing-px: clamp(24px, 3vw, 52px);
   --nav-text-size: calc(64 / var(--unit) * 1rem); /* 64px */
+  --nav-link-default-font-size: 4vw;
+  --nav-link-small-font-size: 3vw;
+  --nav-link-padding: 0.75rem;
 
   --page-max-width: 1400px;
   --layout-grid-gap: 2em;
+  --layout-main-content-fr: 3fr;
   @media (--media-min-extra-large) {
     --layout-grid-gap: 3em;
   }
