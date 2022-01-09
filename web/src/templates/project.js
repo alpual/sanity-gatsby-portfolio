@@ -82,10 +82,10 @@ export const query = graphql`
 `
 
 const ProjectTemplate = props => {
-  const {data, errors} = props
+  const {data, errors, location} = props
   const project = data && data.sampleProject
   return (
-    <Layout>
+    <Layout location={location}>
       {errors && <SEO title='GraphQL Error' />}
       {project && <SEO title={project.title || 'Untitled'} />}
 

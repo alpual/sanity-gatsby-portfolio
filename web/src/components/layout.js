@@ -4,8 +4,10 @@ import Header from './header'
 import '../styles/layout.css'
 import styles from './layout.module.css'
 
-const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle, logo}) => (
-  <div className={styles.pageWrapper} data-pathname={window.location.pathname}>
+const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle, logo, location}) => {
+  const pathName = location ? location.pathname : '';
+  return (
+  <div className={styles.pageWrapper} data-pathname={pathName}>
     <Header siteTitle={siteTitle} logo={logo} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
     <div className={styles.content}>{children}</div>
     <footer className={styles.footer}>
@@ -16,6 +18,6 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle, logo}) => (
       </div>
     </footer>
   </div>
-)
+);}
 
 export default Layout

@@ -73,11 +73,11 @@ export const query = graphql`
 `
 
 const IndexPage = (props) => {
-  const {data, errors} = props
+  const {data, errors, location} = props;
 
   if (errors) {
     return (
-      <Layout>
+      <Layout location={location}>
         <GraphQLErrorList errors={errors} />
       </Layout>
     )
@@ -101,8 +101,9 @@ const IndexPage = (props) => {
   }
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
+      <h1>{location && location.pathname}</h1>
       <Container>
         {projectNodes && (
           <ProjectPreviewGrid

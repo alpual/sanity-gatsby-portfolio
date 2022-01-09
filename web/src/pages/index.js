@@ -57,7 +57,7 @@ export const query = graphql`
 `
 
 const IndexPage = props => {
-  const {data, errors} = props
+  const {data, errors, location} = props
 
   if (errors) {
     return (
@@ -80,7 +80,7 @@ const IndexPage = props => {
   }
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container> 
         <HomeCarousel nodes={carouselImages}/>
