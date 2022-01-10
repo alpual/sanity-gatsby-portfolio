@@ -5,7 +5,10 @@ import '../styles/layout.css'
 import styles from './layout.module.css'
 
 const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle, logo, location}) => {
-  const pathName = location ? location.pathname : '';
+  let pathName = '';
+  React.useEffect(() => {
+    pathName = location ? location.pathname : '';
+  }, [location]);
   return (
   <div className={styles.pageWrapper} data-pathname={pathName}>
     <Header siteTitle={siteTitle} logo={logo} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
