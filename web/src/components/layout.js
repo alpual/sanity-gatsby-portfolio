@@ -8,6 +8,9 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle, logo, locat
   let pathName = '';
   React.useEffect(() => {
     pathName = location ? location.pathname : '';
+    console.log({pathName});
+    // This works, but is deeply disappointing as solutions go.
+    document.querySelector(`.${styles.pageWrapper}`).setAttribute('data-pathname', pathName);
   }, [location]);
   return (
   <div className={styles.pageWrapper} data-pathname={pathName}>
