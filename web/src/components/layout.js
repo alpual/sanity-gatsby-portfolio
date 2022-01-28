@@ -4,10 +4,13 @@ import Header from './header'
 import '../styles/layout.css'
 import styles from './layout.module.css'
 
-const Layout = ({
-  children, onHideNav, onShowNav, showNav, siteTitle, logo, location
-}) => {
-  const pathName = location ? location.pathname : ''
+const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle, logo, location}) => {
+  let pathName = '';
+  React.useEffect(() => {
+    pathName = location ? location.pathname : '';
+    // This works, but is deeply disappointing as solutions go.
+    document.querySelector(`.${styles.pageWrapper}`).setAttribute('data-pathname', pathName);
+  }, [location]);
   return (
     <div className={styles.pageWrapper} data-pathname={pathName}>
       <Header siteTitle={siteTitle} logo={logo} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
