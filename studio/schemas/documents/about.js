@@ -1,4 +1,4 @@
-import { format } from 'date-fns'
+import {format} from 'date-fns'
 
 export default {
   name: 'about',
@@ -37,7 +37,7 @@ export default {
       slug: 'slug',
       media: 'mainImage'
     },
-    prepare({ title = 'No title', slug = {}, media }) {
+    prepare ({title = 'No title', slug = {}, media}) {
       return {
         title,
         media

@@ -1,6 +1,8 @@
 /* global __DEV__ */
 
-import {defer, from as observableFrom, of as observableOf, throwError} from 'rxjs'
+import {
+  defer, from as observableFrom, of as observableOf, throwError
+} from 'rxjs'
 import {mergeMap} from 'rxjs/operators'
 
 // eslint-disable-next-line import/no-commonjs

@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 import {
   mapEdgesToNodes, cn, buildImageObj
 } from '../lib/helpers'
@@ -7,7 +7,7 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import { imageUrlFor } from '../lib/image-url'
+import {imageUrlFor} from '../lib/image-url'
 import BlockContent from '../components/block-content'
 import styles from '../components/project.module.css'
 
@@ -45,8 +45,8 @@ export const query = graphql`
   }
 `
 
-const AboutPage = props => {
-  const { data, errors } = props
+const AboutPage = (props) => {
+  const {data, errors} = props
 
   if (errors) {
     return (
@@ -56,7 +56,7 @@ const AboutPage = props => {
     )
   }
 
-  const site = (data || {}).site
+  const {site} = data || {}
 
   const aboutNodes = (data || {}).about
     ? mapEdgesToNodes(data.about)
@@ -90,7 +90,7 @@ const AboutPage = props => {
                 <div className={styles.mainContent}>
                   <h1 className={styles.title}>{node.title}</h1>
                   {node._rawBody && <BlockContent blocks={node._rawBody || []} />}
-                  <p><a href="mailto:nnelson@risd.edu">Contact me</a></p>
+                  <p><a href='mailto:nnelson@risd.edu'>Contact me</a></p>
                 </div>
               </div>
             </div>

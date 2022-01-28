@@ -18,6 +18,7 @@ import projectMember from './objects/projectMember'
 import projectPortableText from './objects/projectPortableText'
 import simplePortableText from './objects/simplePortableText'
 import homepageCarousel from './documents/homepageCarousel'
+import youtube from './objects/youtube'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -40,6 +41,7 @@ export default createSchema({
     person,
     sampleProject,
     homepageCarousel,
-    siteSettings
+    siteSettings,
+    youtube
   ])
 })

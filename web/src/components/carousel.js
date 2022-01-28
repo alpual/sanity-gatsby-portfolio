@@ -1,18 +1,18 @@
-import React from 'react';
-import { imageUrlFor } from '../lib/image-url'
-import { buildImageObj } from '../lib/helpers';
-import Carousel from 'nuka-carousel';
+import React from 'react'
+import Carousel from 'nuka-carousel'
+import {imageUrlFor} from '../lib/image-url'
+import {buildImageObj} from '../lib/helpers'
 import '../styles/layout.css'
-import styles from './carousel.module.css';
-import { Link } from 'gatsby';
+import styles from './carousel.module.css'
+import {Link} from 'gatsby'
 
-const HomeCarousel = ({nodes}) => {
+const HomeCarousel = ({nodes}) =>
   // console.dir(nodes);
-  return (
+  (
     <>
       <div className={styles.carousel}>
         <Carousel
-          autoplay={true}
+          autoplay
           autoplayInterval={5000}
         >
           {nodes && nodes.map(node => (
@@ -47,7 +47,6 @@ const HomeCarousel = ({nodes}) => {
         }
       </div>
     </>
-  );
-}
+  )
 
 export default HomeCarousel

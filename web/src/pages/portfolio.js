@@ -73,7 +73,7 @@ export const query = graphql`
 `
 
 const IndexPage = (props) => {
-  const {data, errors, location} = props;
+  const {data, errors, location} = props
 
   if (errors) {
     return (
@@ -88,10 +88,6 @@ const IndexPage = (props) => {
     ? mapEdgesToNodes(data.projects)
       .filter(filterOutDocsWithoutSlugs)
       .filter(filterOutDocsPublishedInTheFuture)
-    : []
-
-  const homepageCarousel = (data || {}).homepageCarousel
-    ? mapEdgesToNodes(data.homepageCarousel)
     : []
 
   if (!site) {

@@ -1,4 +1,4 @@
-import {format} from 'date-fns';
+import {format} from 'date-fns'
 
 export default {
   name: 'homepageCarousel',
@@ -32,7 +32,7 @@ export default {
       type: 'reference',
       description: 'Choose a project to which to link this slide',
       to: [{type: 'sampleProject'}]
-    },
+    }
   ],
   preview: {
     select: {
@@ -41,9 +41,11 @@ export default {
       slug: 'slug',
       media: 'image'
     },
-    prepare({ title = 'Work by Neil Nelson', publishedAt, slug = {}, media }) {
-      const dateSegment = format(publishedAt, 'YYYY/MM');
-      const path = `/${dateSegment}/${slug.current}/`;
+    prepare ({
+      title = 'Work by Neil Nelson', publishedAt, slug = {}, media
+    }) {
+      const dateSegment = format(publishedAt, 'YYYY/MM')
+      const path = `/${dateSegment}/${slug.current}/`
       return {
         title,
         media,

@@ -17,7 +17,7 @@ export default {
       name: 'logo',
       type: 'image',
       title: 'logo',
-      description: 'An svg or png of the logo',
+      description: 'An svg or png of the logo'
     }, {
       name: 'description',
       type: 'text',

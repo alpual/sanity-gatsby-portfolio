@@ -5,22 +5,24 @@ import HamburgerIcon from './icon/hamburger'
 import {cn, buildImageObj} from '../lib/helpers'
 
 import styles from './header.module.css'
-import { imageUrlFor } from '../lib/image-url'
+import {imageUrlFor} from '../lib/image-url'
 
-const Header = ({onHideNav, onShowNav, showNav, logo}) => (
+const Header = ({
+  onHideNav, onShowNav, showNav, logo
+}) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.hamburgerWrapper}>
         <div className={styles.branding}>
           <Link to='/' className={styles.logo}>
             {logo && (
-              <img 
+              <img
                 src={imageUrlFor(buildImageObj(logo))
                   .width(290)
                   .height(225)
-                  .url()} 
-                />
-              )}
+                  .url()}
+              />
+            )}
           </Link>
         </div>
 

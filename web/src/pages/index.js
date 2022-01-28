@@ -7,7 +7,7 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import HomeCarousel from '../components/carousel';
+import HomeCarousel from '../components/carousel'
 
 export const query = graphql`
   query IndexPageQuery {
@@ -56,7 +56,7 @@ export const query = graphql`
   }
 `
 
-const IndexPage = props => {
+const IndexPage = (props) => {
   const {data, errors, location} = props
 
   if (errors) {
@@ -67,9 +67,9 @@ const IndexPage = props => {
     )
   }
 
-  const site = (data || {}).site
-  
-  const carouselImages = (data || {}).homepageCarousel 
+  const {site} = data || {}
+
+  const carouselImages = (data || {}).homepageCarousel
     ? mapEdgesToNodes(data.homepageCarousel)
     : []
 
@@ -82,8 +82,8 @@ const IndexPage = props => {
   return (
     <Layout location={location}>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Container> 
-        <HomeCarousel nodes={carouselImages}/>
+      <Container>
+        <HomeCarousel nodes={carouselImages} />
       </Container>
     </Layout>
   )

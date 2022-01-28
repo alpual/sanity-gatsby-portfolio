@@ -29,8 +29,8 @@ async function createProjectPages (graphql, actions, reporter) {
 
   projectEdges
     .filter(edge => !isFuture(edge.node.publishedAt))
-    .forEach(edge => {
-      const id = edge.node.id
+    .forEach((edge) => {
+      const {id} = edge.node
       const slug = edge.node.slug.current
       const path = `/project/${slug}/`
 

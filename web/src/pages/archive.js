@@ -36,8 +36,8 @@ export const query = graphql`
   }
 `
 
-const ArchivePage = props => {
-  const {data, errors} = props
+const ArchivePage = (props) => {
+  const {data, errors, location} = props
   if (errors) {
     return (
       <Layout>
